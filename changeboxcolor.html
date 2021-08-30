@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Welcome">
+        <title>Change Image Color</title>
+        <style>
+            body {
+                padding:0;
+                margin:0;
+            }
+            .box {
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                width: 100%;
+                height: 100%;
+                background:#fff;
+                box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+            }
+            .box ul {
+                margin: -50px auto 0;
+                padding:0;
+                width:100%;
+                height:100%;
+            }
+            .box ul li {
+                list-style:none;
+                width: 8.333333%;
+                height: 14.333333%;
+                float:left;
+                background: #ccc;
+            }
+            .box ul li:hover {
+                box-sizing:border-box;
+                border:2px solid #262626;
+            }
+            .box ul li:nth-child(1),
+            .box ul li:nth-child(1) div {
+                background:#080;
+            }
+            .box ul li:nth-child(2),
+            .box ul li:nth-child(2) div {
+                background:#F00;
+            }
+            .box ul li:nth-child(3),
+            .box ul li:nth-child(3) div {
+                background:#00F;
+            }
+            .box ul li:nth-child(4),
+            .box ul li:nth-child(4) div {
+                background:#FF0;
+            }
+            .box ul li:nth-child(5),
+            .box ul li:nth-child(5) div {
+                background:#0FF;
+            }
+            .box ul li:nth-child(6),
+            .box ul li:nth-child(6) div {
+                background:#d71ada;
+            }
+            .box ul li:nth-child(7),
+            .box ul li:nth-child(7) div {
+                background:#4ac5ba;
+            }
+            .box ul li:nth-child(8),
+            .box ul li:nth-child(8) div {
+                background:#5fc776;
+            }
+            .box ul li:nth-child(9),
+            .box ul li:nth-child(9) div {
+                background:#e059c9;
+            }
+            .box ul li:nth-child(10),
+            .box ul li:nth-child(10) div {
+                background:#6a6b14;
+            }
+            .box ul li:nth-child(11),
+            .box ul li:nth-child(11) div {
+                background:#754412;
+            }
+            .box ul li:nth-child(12),
+            .box ul li:nth-child(12) div {
+                background:#33a1ff;
+            }
+            .box ul li div {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                transform:scaleY(0);
+                transform-origin: bottom;
+                transition: transform 0.5s;
+            }
+            .box ul li:hover div {
+                transform:scaleY(1);
+                transform-origin: left;
+                transition: transform 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <ul>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+            </ul>
+        </div>
+    </body>
+</html>
